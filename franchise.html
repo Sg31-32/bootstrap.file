@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+  <style>.login{
+    border: 6px  solid black;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 149px;
+    margin-right: 594px;
+    background: rgba(15, 249,173 , 0.5);
+  }
+  .p{
+    background: blue;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  input{
+    width: 225px;
+    height: 31px;
+    border-radius: 22px;
+    outline: none;
+    padding-left: 17px;
+  }
+  body{
+    background: url(image/3408037);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btn{
+    width: 135px;
+    height: 35px;
+    font-size: 16px;
+  }
+   
+.modal-content{
+    background: #fbb029;
+    padding: 10px;
+    border: 3px;
+   solid #fbb029;
+    border-radius: 1px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+    position: relative;
+    flex-direction: column;
+     pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+  }
+  .modal-title{
+        margin-bottom: 0;
+       line-height: 1.5;
+       font-family: Merriweather,serif;
+  }
+  .form line{
+        padding: 10px 10px 0!important;
+        font-size: 11px!important;
+        line-height: 15px;
+}
+.form{
+      display: block;
+    margin-top: 0emd;
+}
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.2 rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+  
+
+   
+</style>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="" class="navbar-brand">
+      <img src="https://www.firstfiddle.in/assets/images/ff-logo-02.png" style="width:59px;" class="web-logo">
+
+      <img class="mob-logo" src="https://www.firstfiddle.in/assets/images/logo-for-mobile.png">
+    </a>
+    
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#pn">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id=pn>
+    <ul class="navbar-nav ms-auto">
+      <li><a href="home.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">ABOUT</a></li>
+      <li><a href="" class="nav-link">BRANDS</a></li>
+      <li><a href="" class="nav-link">OUR TEAM</a></li>
+      <li><a href="" class="nav-link">PRESS RELEASE</a></li>
+      <li><a href="" class="nav-link">CONTACTS</a></li>
+      <li><a href="" class="nav-link">CAREERS</a></li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            FRANCHISE
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+      <!---modal button-->
+      <button type="button" class="btn btn-outline-warning btn-lg" data-bs-toggle="modal" data-bs-target="#aa">login</button>
+      <!--model button end--->
+    </ul> 
+  </div><!--collapse end-->
+  </div><!--container-fluid-->
+</nav><!--nav end-->
+   
+   <div class="container-fluid">
+     <div class="container">
+       <div class="row">
+        <img src="https://www.firstfiddle.in/assets/images/banner2.jpg">
+        
+    <div class="container let-connect">
+    <div class="row">
+    <div  class="col-lg-4">
+      <div  class="col-lg-3">
+        <div  class="modal-content col-lg-5" id="inquiry" style="background:#fbb029;padding: 10px; width: 450px; margin-top: -590px; margin-left: 750px;">
+          <div class="modal-header text-center" style="display: block;">
+            <h4  class="modal-title" style="color: white;">Inquiry Form</h4>
+          </div>
+          <div >
+            <p class="text-center form-line" style="line-height: 15px;">"For more information about how you can become the part of First Fiddle Restaurants, submit your information below and the Franchise Manager will get in touch with you."</p>
+          </div>
+          <form autocomplete="off" name="form" novalidate class="ng-untouched ng-pristine ng-invalid">
+            <div  class="row">
+              <div class="form-group col-lg-6">
+                <b _ngcontent-tky-c3>NAME*</b>
+
+                <input  class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="name" id="name" name="name" placeholder="Name" type="text">
+
+                <div  class="invalid-feedback">
+                  <div >Name is required</div>
+              </div>
+             </div>
+           </div>
+
+           <div class="form-group col-lg-6">
+            <b >MOBILE*</b>
+            <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="mobile" id="mobile" name="mobile" placeholder="Mobile" type="number">
+            <div  class="invalid-feedback">
+              <div _ngcontent-tky-c3>Mobile is required</div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-6">
+            <b >EMAIL*</b>
+            <input  class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="email" id="email" name="email" placeholder="Email" type="text">
+          </div>
+          <div  class="form-group col-lg-6">
+            <b >LOCATION*</b>
+            <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="business_location" name="business_location" placeholder="Business Location">
+          </div>
+        </div>
+            <div class="row">
+            <div  class="form-group col-lg-6">
+              <b >Investment Budget*</b>
+              <select  class="custom-select ng-untouched ng-pristine ng-invalid" formcontrolname="investment_budget" name="investment_budget">
+              <option  disabled value>Investment Budget</option>
+             <option value="1 Cr to 2 Cr">1 Cr to 2 Cr</option>
+             <option  value="2 Cr to 3 Cr">2 Cr to 3 Cr</option>
+             <option  value="3 Cr to 4 Cr">3 Cr to 4 Cr</option>
+             <option  value="4 Cr to Above">4 Cr to Above</option>
+           </select>
+         </div>
+       </div>
+       <div class="row">
+           <div  class="form-group col-lg-6">
+            <b >BRAND*</b>
+            <select  class="custom-select ng-untouched ng-pristine ng-invalid" formcontrolname="all_brands" name="all_brands">
+              <option  disabled value>Select a Brand</option>
+              <option  value="Lord of The Drinks">Lord of The Drinks</option>
+              <option  value="Dragonfly Experience">Dragonfly Experience</option>
+              <option value="Plum by Bentchair">Plum by Bentchair</option>
+              <option  value="Daddy Everyday Bar">Daddy Everyday Bar</option>
+              <option  value="JLWA Cafe">JLWA Cafe</option>
+              <option value="The Flying Saucer Cafe">The Flying Saucer Cafe</option>
+              <option  value="Rocky Star Cocktail Bar">Rocky Star Cocktail Bar</option>
+            </select>
+          </div>
+          </div>
+          <div  class="row">
+            <div  class="form-group">
+              <b >MESSAGE*</b>
+              <textarea aria-invalid="false" class="form-control ng-pristine ng-invalid is-invalid ng-touched" formcontrolname="message" id="message" name="message" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="text-center">
+            <button _ngcontent-tky-c3 class="btn btn-warning" style="background-color: #000000;border-color: #000000; width: 150px;
+                font-size: 15px;     color: #ffffff;" type="submit" disabled>SUBMIT FORM</button>
+              </div>
+            </div>
+           </div>
+          </div>
+         </div>
+           </div>
+          </div>
+          <div class="container-fluid">
+      <div class="container">
+       <div class="row">
+         <br>
+          <h4>ABOUT COMPANY</h4>
+          <br>
+        <h3><span style="color:#ffad00;">One of the Largest Restaurants</span></h3>
+        <br><br>
+        <h4>Chain of the country</h4>
+   
+      <br> <br><br>
+       <div class="col-md-7">
+          <p class="b" style="font-size: 16px; letter-spacing: 3px;">First Fiddle Restaurants, one of the india’s largest F&B company in the casual dining sector, is headed by Priyank Sukhija. From Lazeez Affair, the first brand conceived in 1999 to Dragonfly Experience and Plum By Bent Chair, its latest ventures, it has brought a wave of innovation in the hospitality industry.<br><br><br>
+          It has been lauded with an endless number of awards by ‘Times Nightlife’, ‘GQ’, ‘Indian Restaurant Awards’- to name a few. With more than 35 brands under its name such as Lord Of The Drinks, Tamasha, The Flying Saucer Café, JLWA, it has grown manifold in the past 20 years and continues to do so.</p>
+           </div>
+         </div>
+          </div>
+          <button routerlink="/about-us" style="font-family: 'Montserrat', sans-serif; letter-spacing: 2px; height: 40px;margin-bottom: 20px; background-color:#ffad00;" tabindex="0">READ MORE</button>
+          <div class="col-md-5 text-centre">
+         <center>
+         <img src="https://www.firstfiddle.in/assets/images/local2.jpg" style="margin-left: 780px; margin-top: -363px;">
+       
+      </center>
+          
+          
+    
+  </div>
+      
+    </div>
+  </div>
+  <br>
+  <div  class="row" style="background-image: url(https://app.firstfiddle.in/images/brand-banner/jlwa.jpeg); height: 400px;">
+    <div  class="col-md-2 clearfix">
+      <img alt="Card image cap" class="card-img-top" src="https://www.firstfiddle.in/assets/images/dragonfly.jpg">
+    </div>
+    <div class="col-md-2 clearfix d-none d-md-block">
+      <img  alt="Card image cap" class="card-img-top" src="https://www.firstfiddle.in/assets/images/lotd.jpg">
+    </div>
+    <div  class="col-md-2 clearfix d-none d-md-block">
+      <img  alt="Card image cap" class="card-img-top" src="https://www.firstfiddle.in/assets/images/plum.jpg">
+    </div>
+    <div  class="col-md-2 clearfix d-none d-md-block">
+      <img alt="Card image cap" class="card-img-top" src="https://www.firstfiddle.in/assets/images/jalwa.jpg">
+    </div>
+    <div class="col-md-2 clearfix d-none d-md-block">
+      <img _ngcontent-tky-c3 alt="Card image cap" class="card-img-top" src="https://www.firstfiddle.in/assets/images/rockystar.jpg">
+    </div>
+    <div  class="col-md-2 clearfix d-none d-md-block">
+      <img  alt="Card image cap" class="card-img-top" src="https://www.firstfiddle.in/assets/images/openhouse.jpg">
+    </div>
+    <br>
+    <div  class="col-lg-4 why-choose-3" style="margin-left: 30px;">
+      <br><br>
+      <div  class="why-choose text-left" style="color:black;background-color:#ffad00;padding: 50px;">
+        <h2  class="why-choose-2" style="font-family: 'Merriweather', serif;
+            letter-spacing: 2px;">Why to choose a restaurant franchise?</h2>
+      </div>
+    </div>
+    <div class="col-lg-8 why-choose-points">
+      <div  class="row">
+        <div  class="column text-right" style="color:white;background-color:#020202; margin-left: 660px; width: 320px;margin-top: -185px;">
+          <img alt="one" class="count" src="https://www.firstfiddle.in/assets/images/one.png">
+          <p  class="text-left why-choose-content">The foodservice industry is a booming industry with an anticipated CAGR of 10 percent for the five-year period between 2017 and 2022. With such a forecast and expected rise to the industry to a value of INR5,52,000 crore by 2022, any investment made in this sector will lead to profitable results and higher return.</p>
+        </div>
+      </div>
+    </div>
+      <div class="column text-right" style="color:white;background-color:#020202; margin-left:990px;width: 320px;margin-top: -250px;">
+        <img  alt="two" class="count" src="https://www.firstfiddle.in/assets/images/two.png">
+        <p class="text-left why-choose-content">By 2022, the Indian food service industry is predicted to have a volume of 77 billion transactions which is 28.5 percent increase since 2017 along with a forecast of 5.1 percent CAGR. With such a great expansion rate, the probability of yielding high profits in the hospitality sector increases manifolds.</p>
+      </div>
+        <div class="column text-right" style="color:white;background-color:#020202; margin-left:660px;width: 320px;margin-top: -1px;">
+        <img  alt="two" class="count" src="https://www.firstfiddle.in/assets/images/three.png">
+        <p class="text-left why-choose-content">When it comes to the developing world, India’s economy is among the fastest-growing and has great potential to be exploited and turn big. With many other external forces at work to promote restaurants in India, this is a golden time to invest in the Food & Beverage industry and make use of the augmentation.</p>
+      </div>
+</body>
+</html>
